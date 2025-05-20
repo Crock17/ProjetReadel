@@ -119,37 +119,63 @@ div>p {
 
 #introduction a {
     text-decoration: none;
-    color: #cabfbf;
+    color: #252525;
 }
 
 #introduction a:hover {
-    color: #313131;
+    color: #d5d1d1;
     transition: 0.25s;
 }
 
 footer>button:hover {
     transition: 0.5s;
-    background-color: #efe8e8;
+    background-color: #484545;
     color: #313131;
     transition: 0.5s;
-    background-color: #d6d3d3;
+    background-color: #d6d3d3; 
 }
 
 input {
     width: 10cm;
-    height: 1cm;
+    height: 1.2cm;
     border-radius: 10px;
     margin-top: 40px;
     background-color: #b2b2b2;
     border: 0px solid #393939;
 
 }
-
+label{
+    color: #a3a2a2;
+    cursor: pointer;
+}
+label:hover{
+    color: #c5c0c0;
+    text-decoration: underline;
+}
 input:hover,
 input:focus {
     background-color: #fffefe;
     box-shadow: 0 2px 5px 2px #fafafa;
-    
+    transition: 0.5s;
+
+}
+
+form>button {
+    height: 1cm;
+    width: 2cm;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Artega;
+    background-color: #b2b2b2;
+    border: 0px solid #393939;
+
+
+}
+
+form>button:hover {
+    box-shadow: 0 2px 5px 2px #fafafa;
+    transition: 0.5s;
+    background-color: #313131;
 }
 
 
@@ -255,9 +281,11 @@ footer>button:hover {
     transition: 0.5s;
     background-color: #d6d3d3;
 }
-#maintenance{
+
+#maintenance {
     margin-left: 7%;
 }
+
 #maintenance img {
     border-radius: 50%;
     margin-left: 40px;
@@ -285,6 +313,7 @@ footer>button:hover {
 .development {
     margin: 20px;
 }
+
 /* 
 .development p {
     background-color: #ebe7e71f;
@@ -298,7 +327,7 @@ img {
     border-radius: 50%;
     margin: 40px;
     margin-top: 100px;
-}   
+}
 
 .para-about {
 
@@ -407,6 +436,7 @@ h4 {
     }
 
 }
+
 @media only screen and (max-width:796px) {
     #service>section {
         display: flex;
@@ -414,8 +444,16 @@ h4 {
         justify-content: center;
         align-items: center;
     }
-    footer{
+
+    footer {
         display: flex;
         flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 }
